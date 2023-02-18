@@ -8,7 +8,7 @@ body{
 }
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 h1{
@@ -59,13 +59,20 @@ color: #8f8f8f;
 
 /* Title Image */
 .title-image {
-  width: 60%
+  /* width: 60%; */
+  transform: rotate(25deg);
+  padding-top: 10px;
+  position: absolute;
+  right: 30%;
+
 }
 
-.rotate {
+/* .rotate {
   transform: rotate(25deg);
   padding-top: 100px;
-}
+  position: absolute;
+  right: 30%;
+} */
 
 .font-1 {
   font-family: "montserrat-bold";
@@ -75,6 +82,9 @@ color: #8f8f8f;
 /* Features Section */
 #features {
 padding: 7% 15%;
+position: relative;
+/* bottom: 150px; */
+background-color: white;
 }
 
 .section-width {
@@ -117,4 +127,55 @@ text-align: center;
 .press-logo{
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+#pricing-column {
+  padding: 5% 7%;
+}
+
+@media (max-width: 1028px) {
+  #title {
+  text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0deg);
+  }
+}
+
+  /* Call to Action */
+
+  #cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 50px 100px 10px;
+  }
+
+  .cta-top {
+
+  }
+
+.cta-color {
+  color: #fff;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 100px 10px;
+}
+
+.footer-icon-align {
+  color: black;
+  padding: 0 10px 15px;
 }
